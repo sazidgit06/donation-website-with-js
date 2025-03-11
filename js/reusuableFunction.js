@@ -12,3 +12,16 @@ function getInfo(id){
 
     document.getElementById(id).classList.remove('hidden');
 }
+
+
+function getInput(id){
+    const inputValue = document.getElementById(id).value;
+    const inputFloat = parseFloat(inputValue);
+    return inputFloat;
+}
+
+function getText(id){
+    const getbalance = document.getElementById(id).innerText;
+    const balanceFloat = parseFloat(getbalance);
+    return balanceFloat;
+}
