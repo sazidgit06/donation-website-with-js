@@ -20,10 +20,12 @@ document.getElementById('card1-id').addEventListener('click', function(){
     // history
 
     const p = document.createElement('p');
-    p.innerText = `Added ${inputValue}tk Your current balance is ${newMainBalance}`;
+    p.innerText = `
+         ${inputValue} taka is donated for flood relief in feni, Bangladesh
+    `;
     document.getElementById('history-page-id').appendChild(p);
 
     // modal
 
-
+    document.getElementById('my_modal').showModal();
 });
